@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MSBuild.Tsd</id>
+    <title>MSBuild.Tsd</title>
+    <version>0.0.1</version>
+    <authors>Yuriy Nagaev</authors>
+    <owners>Yuriy Nagaev</owners>
+    <projectUrl>http://github.com/ynagaev/MSBuild.Tsd</projectUrl>
+    <licenseUrl>http://github.com/ynagaev/MSBuild.Tsd</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Run a tsd task as a MSBuild task</description>
+    <tags>TSD MSBuild</tags>
+    <developmentDependency>true</developmentDependency>
+    <dependencies>
+      <dependency id="MSBuild.Node" version="[0.4.4,1.0.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="build\*.Tsd.*" target="build/" />
+	<file src="readme.md" target="readme.md" />
+  </files>
+</package>
